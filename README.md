@@ -1,2 +1,2 @@
 # rgrow
-# loading here some simple games that help students learn doctrinal mastery
+# a repository to keep some simple games that help students learn doctrinal mastery
