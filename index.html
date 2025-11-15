@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Power Up Together</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <!-- Replace logo.png with your own image name -->
+      <img src="images/logo.png" alt="Site Logo" />
+      <span>Power Up Together</span>
+    </div>
+    <nav class="nav">
+      <a href="#games">Games</a>
+      <a href="#challenge">Daily Challenge</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Grow Stronger. Together.</h1>
+        <p>
+          Fun, simple challenges kids and adults can do together every day—
+          building stronger bodies, minds, and families.
+        </p>
+        <a href="#challenge" class="btn-primary">Start Today’s Challenge</a>
+      </div>
+      <div class="hero-image">
+        <!-- Replace hero.png with a family/kids illustration or photo -->
+        <img src="images/hero.png" alt="Family playing together" />
+      </div>
+    </section>
+
+    <!-- DAILY CHALLENGE HIGHLIGHT -->
+    <section id="challenge" class="challenge-section">
+      <h2>Today’s Challenge</h2>
+      <div class="challenge-card">
+        <h3>30-Second Power Circle</h3>
+        <p class="tagline">Age 6+ · 5 minutes · No equipment</p>
+        <p>
+          Stand in a circle and take turns doing a quick move:
+          5 jumping jacks, 5 squats, or 5 superhero poses.
+          Go around the circle twice and cheer for everyone!
+        </p>
+        <button class="btn-secondary">
+          Randomize Challenge (future feature)
+        </button>
+      </div>
+    </section>
+
+    <!-- GAMES GRID -->
+    <section id="games" class="games-section">
+      <div class="section-header">
+        <h2>Pick a Game</h2>
+        <p>Short, simple activities you can play anytime.</p>
+      </div>
+
+      <div class="games-grid">
+        <!-- GAME CARD 1 -->
+        <article class="game-card">
+          <div class="game-image">
+            <img src="images/game1.png" alt="Game 1" />
+          </div>
+          <div class="game-body">
+            <h3>Balance Bridge</h3>
+            <p>
+              Take turns walking an imaginary “bridge” on the floor.
+              Add challenges like one-leg steps or arm circles.
+            </p>
+            <a href="games/balance-bridge/index.html" class="game-link">
+              Play / Learn
+            </a>
+          </div>
+        </article>
+
+        <!-- GAME CARD 2 -->
+        <article class="game-card">
+          <div class="game-image">
+            <img src="images/game2.png" alt="Game 2" />
+          </div>
+          <div class="game-body">
+            <h3>Hero Dice</h3>
+            <p>
+              Roll a die to pick your move: jumps, spins, push-ups,
+              or silly hero poses for the whole family.
+            </p>
+            <a href="games/hero-dice/index.html" class="game-link">
+              Play / Learn
+            </a>
+          </div>
+        </article>
+
+        <!-- GAME CARD 3 -->
+        <article class="game-card">
+          <div class="game-image">
+            <img src="images/game3.png" alt="Game 3" />
+          </div>
+          <div class="game-body">
+            <h3>Power Path</h3>
+            <p>
+              Create a path of stations in your home or yard:
+              hop, crawl, spin, and race from start to finish.
+            </p>
+            <a href="games/power-path/index.html" class="game-link">
+              Play / Learn
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT / FOOTER INFO -->
+    <section id="about" class="about-section">
+      <h2>About This Project</h2>
+      <p>
+        This site is built to help families build daily habits of movement,
+        connection, and fun. Each game is designed to be quick, simple,
+        and easy to do with kids of different ages.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Power Up Together. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
