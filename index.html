@@ -7,73 +7,104 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- TOP NAV -->
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="nav-inner">
-      <div class="brand">Power in the Scriptures</div>
-      <nav class="nav-links">
-        <a href="#about">About Me</a>
+    <div class="container header-inner">
+      <div class="logo">Power in the Scriptures</div>
+      <nav class="main-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
         <a href="#study">Study Together</a>
         <a href="#games">Play Games</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
+  <main id="home">
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-bg"></div>
       <div class="hero-content">
-        <p class="hero-line hero-line-top">There is</p>
-        <p class="hero-line hero-line-middle">Power</p>
-        <p class="hero-line hero-line-bottom">in the scriptures</p>
+        <p class="hero-kicker">Scripture Study</p>
+        <h1>There is Power in the Scriptures</h1>
+        <p class="hero-date">Daily study • Family & Seminary</p>
       </div>
     </section>
 
-    <!-- BLUE BAR SECTION -->
-    <section class="blue-strip" id="study">
-      <div class="blue-strip-inner">
-        <div class="blue-item">
-          <h2>Study Together</h2>
-        </div>
-        <div class="blue-divider"></div>
-        <div class="blue-item" id="games">
-          <h2>Games to Memorize<br />Doctrinal Mastery</h2>
+    <!-- FEATURED CARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid">
+          <!-- STUDY TOGETHER CARD -->
+          <article class="card" id="study">
+            <div class="card-image">
+              <img src="images/study.jpg" alt="Study together image" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Study</span>
+              <h2 class="card-title">Study Together</h2>
+              <p class="card-text">
+                Simple ideas and patterns to help youth, families, and classes
+                dive deeper into the scriptures and feel the power of daily study.
+              </p>
+              <a href="study/index.html" class="card-link">Explore study ideas</a>
+            </div>
+          </article>
+
+          <!-- GAMES CARD -->
+          <article class="card" id="games">
+            <div class="card-image">
+              <img src="images/games.jpg" alt="Games to memorize doctrinal mastery" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Games</span>
+              <h2 class="card-title">Games to Memorize Doctrinal Mastery</h2>
+              <p class="card-text">
+                Interactive, low-prep games that make it fun to memorize
+                doctrinal mastery verses and bring students together while apart.
+              </p>
+              <a href="games/index.html" class="card-link">See scripture games</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT & CONTACT SECTION -->
-    <section class="about-contact" id="about">
-      <div class="about-overlay"></div>
-      <div class="about-content">
-        <div class="about-top">
-          <div class="profile-photo">
-            <!-- Replace profile.jpg with your actual image -->
-            <img src="images/profile.jpg" alt="Photo of me" />
+    <!-- ABOUT & CONTACT -->
+    <section class="section section-light" id="about">
+      <div class="container about-grid">
+        <div class="about-main">
+          <div class="about-header">
+            <img src="images/profile.jpg" alt="Photo of me" class="about-photo" />
+            <div>
+              <h2>About Me</h2>
+              <p class="about-role">Seminary teacher & father</p>
+            </div>
           </div>
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-              As a seminary teacher and father, I see a deep need for helping
-              youth (and adults) improve their study of the scriptures. Games
-              provide a fun way to memorize scriptures and interactive studying
-              brings students together while apart.
-            </p>
-          </div>
+          <p class="about-text">
+            As a seminary teacher and father, I see a deep need for helping youth
+            (and adults) improve their study of the scriptures. Games provide a
+            fun way to memorize scriptures and interactive studying brings
+            students together while apart.
+          </p>
         </div>
 
-        <div class="contact">
+        <div class="about-contact" id="contact">
           <h3>Contact Me</h3>
           <form class="contact-form">
             <label class="field">
               <span>Email address</span>
-              <input type="email" name="email" placeholder="Email address" />
+              <input type="email" name="email" placeholder="you@example.com" />
             </label>
-            <label class="field field-note">
+            <label class="field">
               <span>Note</span>
-              <textarea name="note" rows="2" placeholder="Note"></textarea>
+              <textarea name="note" rows="4" placeholder="How can I help?"></textarea>
             </label>
+            <!-- You can wire this up later to an email service or form handler -->
+            <button type="button" class="btn-disabled" disabled>
+              Send (coming soon)
+            </button>
           </form>
         </div>
       </div>
@@ -81,7 +112,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Power in the Scriptures</p>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Power in the Scriptures</p>
+    </div>
   </footer>
 
   <script>
